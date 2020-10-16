@@ -8,18 +8,18 @@ positive number. */
 int main(int argc, char* argv[]) {
 	
 	if (argc != 2) {
-		printf("negsupport: Usage: sqrt input\n\n");
+		printf("Debug: Usage: sqrt input\n\n");
 		exit(-1);
 	}
 
 	int input = atoi(argv[1]);
     if (input<0){
-        printf("negsupport: br_negativeSupport, sqrt of %d is %fi\n",input,sqrt(-1*input));
+        printf("Debug: br_negativeSupport, sqrt of %d is %fi\n",input,sqrt(-1*input));
     }
     else{
-        printf("negsupport: Sqrt of %d is %f\n",input,sqrt(input));
+        printf("Debug: Sqrt of %d is %f\n",input,sqrt(input));
     }
-    printf("negsupport: end of execution");
+    printf("Debug: end of execution");
     return(0);
 
 } // end main
