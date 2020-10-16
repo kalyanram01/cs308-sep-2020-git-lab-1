@@ -8,22 +8,26 @@ positive number. */
 int main(int argc, char* argv[]) {
 	
 	if (argc != 2) {
-		printf("Usage: sqrt input\n\n");
+		printf("Debug: Usage: sqrt input\n\n");
 		exit(-1);
 	}
 
 	int input = atoi(argv[1]);
     if (input<0){
 
+
         printf("master; sqrt of %d is %fi\n",input,sqrt(-1*input));
+
+
+
 
 
 
     }
     else{
-        printf("Sqrt of %d is %f\n",input,sqrt(input));
+        printf("Debug: Sqrt of %d is %f\n",input,sqrt(input));
     }
-    printf("end of execution");
+    printf("Debug: end of execution");
     return(0);
 
 } // end main
